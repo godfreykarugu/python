@@ -44,14 +44,16 @@ fruits = ['mangoes', 'apples', 'pinapples', 'melon']
 
 #............This has a logical error, it's not executing the else part
 
-'''fruits = ['mangoes', 'apples', 'pinapples', 'melon']
+fruits = ['mangoes', 'apples', 'pinapples', 'melon']
 if 'apples' in fruits:
     fruits.remove('apples')
     print(fruits)
 else:
-    print('there were no apples in the list') '''
+    print('there were no apples in the list')
 
 #............................ testing the same concept
+
+''' 
 
 num = 2
 
@@ -62,4 +64,52 @@ if num >= 18:
 else:
     print('No divide given')
 
+'''
+
+#------------- Loop through a list -------------------------
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for x in numbers:
+    print(x, end=' ')
+
+print()
+
+# print even numbers in the list
+for y in numbers:
+    if y % 2 ==0:
+        print(y, end=' ')
+
+print()
+
+print("Index of even numbers in the list")
+
+for z in range(len(numbers)):
+    if numbers[z] % 2 == 0:
+        print(z, end=' ')
+
+print()
+print("-----------------------------------------")
+# using while loop
+i=0
+while i < len(numbers):
+    print(numbers[i], end=' ')
+    i= i + 1
+print("-----------------------------------------")
+print('index of odd numbers in the list')
+for z in range(len(numbers)):
+    if numbers[z] % 2 !=0:
+        print(z, end=' ')
+
+print()
+print("-----------------------------------------")
+
+# sort a list
+
+anotherlist = [4,2,7,3,8,1]
+anotherlist.sort()
+print(anotherlist)
+anotherlist.sort(reverse=True)
+print(anotherlist)
+print("-----------------------------------------")
 
