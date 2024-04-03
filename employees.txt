@@ -1,0 +1,4 @@
+Acountant: James
+Cashier:  Mary
+Security : WafulaHR: Elizabeth
+ HR: Elizabeth
